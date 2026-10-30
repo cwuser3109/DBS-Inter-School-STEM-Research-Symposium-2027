@@ -35,7 +35,7 @@ export function Iamveryinterestedinthesymposium() {
   return (
     <SymposiumShell>
       <PageIntro 
-        title={<>Thank you for your <em className="font-sans font-normal not-italic text-[#14233d]">interest</em>?</>} 
+        title={<>Thank you for your <em className="font-sans font-normal not-italic text-[#14233d]">interest</em></>} 
         text="We are thrilled by the overwhelming response to the DBS Inter-School STEM Research Symposium 2027." 
       />
       
