@@ -8,7 +8,7 @@ const SCHOOL_LOGO_URL = 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com
 export const navItems = [
   { label: 'Event details', href: '/event-details' },
   { label: 'About & Leadership', href: '/academic-advisor' },
-  { label: 'How to participate', href: '/how-to-participate' },
+
   { label: 'FAQ & Contact', href: '/faq&contact' },
 ]
 
