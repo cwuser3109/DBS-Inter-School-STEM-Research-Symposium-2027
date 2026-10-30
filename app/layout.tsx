@@ -1,6 +1,14 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
+import { Montserrat } from 'next/font/google' // Changed from Inter
 import './globals.css'
+
+// Load Montserrat with lighter weights for that elegant look
+const montserrat = Montserrat({ 
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'], // 300 is the thin, elegant weight
+  variable: '--font-montserrat',
+})
 
 export const metadata: Metadata = {
   title: 'DBS Inter-School STEM Research Symposium 2027 — STEM Research Symposium',
@@ -39,8 +47,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className="antialiased">
+    <html lang="en" className={montserrat.variable}>
+      <body className="antialiased font-sans">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
