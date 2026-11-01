@@ -3,8 +3,7 @@
 import { useState } from 'react'
 import { ArrowRight, CalendarDays, Check, ChevronDown, Clock3, FlaskConical, MapPin, Menu, MoveUpRight, Presentation, Sparkles, Users, X } from 'lucide-react'
 
-const SCHOOL_LOGO_URL = 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-kWz818tZISEqOlF95ENc6RUluT6LsI.png'
-
+const SCHOOL_LOGO_URL = '/symposiumlogo.jpg'
 export const navItems = [
   { label: 'Event Details', href: '/event-details' },
   { label: 'Advisory & Leadership', href: '/academic-advisor' },
