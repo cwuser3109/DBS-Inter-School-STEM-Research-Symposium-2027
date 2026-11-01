@@ -8,7 +8,7 @@ const SCHOOL_LOGO_URL = 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com
 export const navItems = [
   { label: 'Event Details', href: '/event-details' },
   { label: 'Advisory & Leadership', href: '/academic-advisor' },
-
+  { label: 'How to Participate', href: '/how-to-participate' },
   { label: 'FAQ & Contact', href: '/faq&contact' },
 ]
 
@@ -287,7 +287,7 @@ export function FaqContactPage() {
           
           <details className="group rounded-2xl border border-[#d5dae2] bg-white p-6 sm:p-8 [&_summary::-webkit-details-marker]:hidden">
             <summary className="flex cursor-pointer items-center justify-between text-xl font-medium tracking-[-.03em] text-[#14233d]">
-              Who is eligible to attend the Kickoff Lecture?
+              Who are eligible to attend the Kickoff Lecture?
               <ChevronDown className="size-5 shrink-0 transition-transform duration-300 group-open:rotate-180" aria-hidden="true" />
             </summary>
             <p className="mt-4 leading-8 text-[#657084]">
