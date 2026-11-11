@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { ArrowRight, CalendarDays, Check, ChevronDown, Clock3, FlaskConical, MapPin, Menu, MoveUpRight, Presentation, Sparkles, Users, X } from 'lucide-react'
 
-const SCHOOL_LOGO_URL = '/symposiumlogo.jpg'
+const SCHOOL_LOGO_URL = '/schoologo.jpg'
 export const navItems = [
   { label: 'Event Details', href: '/event-details' },
   { label: 'Advisory & Leadership', href: '/academic-advisor' },
@@ -38,23 +38,18 @@ export function SymposiumShell({ children }: { children: React.ReactNode }) {
           ))}
         </nav>
 
-        {/* ACTION BUTTONS (Visible on all sizes) */}
+        {/* ACTION BUTTONS */}
         <div className="flex items-center gap-2 lg:gap-4">
-          
-          {/* JOIN BUTTON */}
           <a 
             href="https://DBSSTEMSymposiumkickoff.eventbrite.hk" 
             target="_blank" 
             rel="noreferrer" 
             className="rounded-full bg-white px-4 py-2 text-xs font-semibold text-[#14233d] transition-transform hover:-translate-y-0.5 md:bg-[#14233d] md:px-5 md:py-3 md:text-sm md:text-white"
           >
-            {/* Short text on mobile, long text on desktop */}
             <span className="md:hidden">Join Now</span>
             <span className="hidden md:inline">Join DBS Inter-School STEM Research Symposium 2026–2027</span>
             <ArrowRight className="ml-1 inline size-3 md:ml-2 md:size-4" aria-hidden="true" />
           </a>
-
-          {/* MOBILE MENU TOGGLE */}
           <button 
             className="rounded-full border border-[#d5dae2] p-2 md:hidden" 
             onClick={() => setMenuOpen(!menuOpen)} 
@@ -79,10 +74,27 @@ export function SymposiumShell({ children }: { children: React.ReactNode }) {
 
       {children}
 
+      {/* UPDATED FOOTER */}
       <footer className="mx-auto flex max-w-7xl flex-col gap-5 px-6 py-8 text-sm text-[#657084] sm:flex-row sm:items-center sm:justify-between lg:px-10">
-        <p className="font-mono text-xs">DBS Inter-School STEM Research Symposium 2026–2027</p>
+        <div className="flex flex-col gap-2">
+          <p className="font-mono text-xs text-[#14233d]">DBS Inter-School STEM Research Symposium 2026–2027</p>
+          <a 
+            href="https://www.instagram.com/dbs.stem.symposium" 
+            target="_blank" 
+            rel="noreferrer" 
+            className="flex items-center gap-2 transition-colors hover:text-[#14233d]"
+          >
+            {/* Inline SVG for Instagram logo */}
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+            </svg>
+            <span>Follow us on IG: <strong className="font-semibold text-[#14233d]">@dbs.stem.symposium</strong></span>
+          </a>
+        </div>
         <p>Made for the curious, by the curious.</p>
-        <a href="/" className="underline underline-offset-4">Back to home <ChevronDown className="ml-1 inline size-3 rotate-180" aria-hidden="true" /></a>
+        <a href="/" className="underline underline-offset-4 hover:text-[#14233d]">Back to home <ChevronDown className="ml-1 inline size-3 rotate-180" aria-hidden="true" /></a>
       </footer>
     </main>
   )
