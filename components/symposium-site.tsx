@@ -9,6 +9,7 @@ export const navItems = [
   { label: 'Advisory & Leadership', href: '/academic-advisor' },
   { label: 'How to Participate', href: '/how-to-participate' },
   { label: 'FAQ & Contact', href: '/faq&contact' },
+  { label: 'Instagram', href: 'https://www.instagram.com/dbs.stem.symposium', target: '_blank', rel: 'noreferrer' },
 ]
 
 export function SymposiumShell({ children }: { children: React.ReactNode }) {
@@ -345,6 +346,65 @@ export function FaqContactPage() {
               </a>
             </div>
           </div>
+        </div>
+      </section>
+    </SymposiumShell> 
+  ) 
+}
+
+export function SponsorsPage() { 
+  return (
+    <SymposiumShell>
+      <PageIntro 
+        title={<>Sponsors and Supporting <em className="font-sans font-normal not-italic text-[#14233d]">Organizations</em></>} 
+        text="We are deeply grateful for the support of the organizations that help make the DBS Inter-School STEM Research Symposium a reality." 
+      />
+      
+      <section className="mx-auto max-w-5xl px-6 pb-24 lg:px-10">
+        <div className="rounded-[2rem] border border-[#d5dae2] bg-white p-8 sm:p-12">
+          
+          <div className="grid gap-6 sm:grid-cols-2">
+            
+            {/* Jane Street */}
+            <div className="flex flex-col items-center justify-center rounded-2xl border border-[#e1e4e9] bg-[#f7f8fa] p-10 transition-shadow hover:shadow-md">
+              {/* Replace this div with an <img> tag when you have the logo */}
+              <div className="flex h-24 w-full items-center justify-center rounded-lg bg-white border border-[#d5dae2] p-4 shadow-sm">
+                <span className="text-xl font-bold tracking-tight text-[#14233d]">Jane Street</span>
+              </div>
+              <h3 className="mt-6 text-lg font-semibold text-[#14233d]">Jane Street</h3>
+            </div>
+
+            {/* DBS Foundation */}
+            <div className="flex flex-col items-center justify-center rounded-2xl border border-[#e1e4e9] bg-[#f7f8fa] p-10 transition-shadow hover:shadow-md">
+              {/* Replace this div with an <img> tag when you have the logo */}
+              <div className="flex h-24 w-full items-center justify-center rounded-lg bg-white border border-[#d5dae2] p-4 shadow-sm">
+                <span className="text-xl font-bold tracking-tight text-[#14233d] text-center">DBS Foundation</span>
+              </div>
+              <h3 className="mt-6 text-lg font-semibold text-[#14233d]">DBS Foundation</h3>
+            </div>
+
+            {/* HKAGE */}
+            <div className="flex flex-col items-center justify-center rounded-2xl border border-[#e1e4e9] bg-[#f7f8fa] p-10 transition-shadow hover:shadow-md">
+              {/* Replace this div with an <img> tag when you have the logo */}
+              <div className="flex h-24 w-full items-center justify-center rounded-lg bg-white border border-[#d5dae2] p-4 shadow-sm">
+                <span className="text-xl font-bold tracking-tight text-[#14233d]">HKAGE</span>
+              </div>
+              <h3 className="mt-6 text-lg font-semibold text-[#14233d]">HKAGE</h3>
+            </div>
+
+            {/* Hour of Code HK */}
+            <div className="flex flex-col items-center justify-center rounded-2xl border border-[#e1e4e9] bg-[#f7f8fa] p-10 transition-shadow hover:shadow-md">
+              {/* Replace this div with an <img> tag when you have the logo */}
+              <div className="flex h-24 w-full items-center justify-center rounded-lg bg-white border border-[#d5dae2] p-4 shadow-sm">
+                <span className="text-xl font-bold tracking-tight text-[#14233d]">Hour of Code Hong Kong</span>
+              </div>
+              <h3 className="mt-6 text-lg font-semibold text-[#14233d]">Hour of Code Hong Kong</h3>
+            </div>
+
+
+
+          </div>
+
         </div>
       </section>
     </SymposiumShell> 
